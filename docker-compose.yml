@@ -4,4 +4,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    entrypoint: /nkn/startup.sh
+    entrypoint: /startup.sh
