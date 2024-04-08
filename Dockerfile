@@ -2,10 +2,10 @@
 FROM ubuntu:latest
 
 # Menyalin skrip startup ke dalam kontainer
-COPY startup.sh /nkn/startup.sh
+COPY startup.sh /startup.sh
 
 # Memberikan izin eksekusi pada skrip
-RUN chmod +x /nkn/startup.sh
+RUN chmod +x /startup.sh
 
 # Menjalankan skrip saat kontainer berjalan
-CMD ["/nkn/startup.sh"]
+CMD ["/startup.sh"]
