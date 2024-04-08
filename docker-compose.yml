@@ -1,0 +1,7 @@
+version: '3'
+services:
+  nkn-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: /root/nkn/startup.sh
